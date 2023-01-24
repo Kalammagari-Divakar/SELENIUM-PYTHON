@@ -1,0 +1,65 @@
+is_displayed:
+  url: "https://www.instagram.com/?hl=en"
+  username keys: "_diwi_reddy_"
+  password keys: "Diwi@6302414"
+  username: "//span[text()='Phone number, username, or email']"
+  login: "//div[text()='Log in']"
+  isselected:
+    url: "http://the-internet.herokuapp.com/checkboxes"
+    select: "//*[@id='checkboxes']/input[1]"
+    select1: "//*[@id='checkboxes']/input[2]"
+  isenable:
+    url: "https://training.openspan.com/login"
+    enable: "login_button"
+
+
+hrm:
+  url: "https://opensource-demo.orangehrmlive.com/web/index.php/auth/login"
+  username: "Admin"
+  password: "admin123"
+
+autosuggestions:
+  url: "https://www.yatra.com/"
+  depart_from: "flight_origin"
+  going_to: "flight_destination"
+  suggestions: "//div[@class='viewport']/div/div/li"
+  date: "//*[@id='BE_flight_origin_date']"
+  all_dates: "//div[@id='monthWrapper']//tbody//td[@class!='inActiveTD']"
+
+drag_drop:
+  url: "https://jqueryui.com/droppable/"
+  switchto: "demo-frame"
+  element1: "draggable"
+  element2: "droppable"
+
+screenshot:
+  url: "https://www.instagram.com/?hl=en"
+  login_button: "//*[@id='loginForm']/div/div[3]"
+  username: "username"
+  password: "password"
+  login: "//*[@id='loginForm']/div/div[3]"
+
+window_handles:
+  url: "https://www.hyrtutorials.com/p/window-handles-practice.html"
+  id: "newTabsBtn"
+
+
+test_iframes:
+  url: "https://www.selenium.dev/selenium/docs/api/java/index.html?overview-summary.html"
+  first frame: "packageListFrame"
+  click in first frame: "org.openqa.selenium"
+  second frame: "packageFrame"
+  click in second frame: "SearchContext"
+  third frame: "classFrame"
+  click in third frame: "Instance Methods"
+
+test_scrolling:
+  url: "https://www.countries-ofthe-world.com/flags-of-the-world.html"
+  element: "//img[@alt='Flag of India']"
+
+
+
+
+
+
+
