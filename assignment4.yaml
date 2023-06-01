@@ -1,0 +1,11 @@
+rest:
+  url: "https://www.saucedemo.com/"
+  user: "standard_user"
+  pass: "secret_sauce"
+  browser: "ChRoMe"
+  item1: "Sauce Labs Backpack"
+  item2: "Sauce Labs Bike Light"
+  item3: "Sauce Labs Bolt T-Shirt"
+  item4: "Sauce Labs Fleece Jacket"
+  item5: "Sauce Labs Onesie"
+  item6: "Test.allTheThings() T-Shirt (Red)"

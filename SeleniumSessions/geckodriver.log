@@ -1,0 +1,210 @@
+1664255345325	geckodriver	INFO	Listening on 127.0.0.1:60102
+1664255348358	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "60103" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\uif48567\\AppData\\Local\\Temp\\rust_mozprofilendBlxE"
+1664255348924	Marionette	INFO	Marionette enabled
+1664255348933	Marionette	INFO	Listening on port 60115
+Read port: 60115
+WebDriver BiDi listening on ws://127.0.0.1:60103
+1664255349119	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\uif48567\\AppData\\Local\\Temp\\rust_mozprofilendBlxE\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:60103/devtools/browser/c7c69792-7b89-495c-994d-bce170ed804b
+JavaScript warning: https://static.xx.fbcdn.net/rsrc.php/v3iX3c4/y6/l/en_GB/sEadbUjyfBj.js?_nc_x=Ij3Wp8lg5Kz, line 21: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1664255378976	Marionette	INFO	Stopped listening on port 60115
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+1664255407885	geckodriver	INFO	Listening on 127.0.0.1:60307
+1664255410952	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "60308" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\uif48567\\AppData\\Local\\Temp\\rust_mozprofilexya3EQ"
+1664255411515	Marionette	INFO	Marionette enabled
+1664255411523	Marionette	INFO	Listening on port 60320
+WebDriver BiDi listening on ws://127.0.0.1:60308
+Read port: 60320
+1664255411770	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\uif48567\\AppData\\Local\\Temp\\rust_mozprofilexya3EQ\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:60308/devtools/browser/b939e592-486d-45d9-bd3e-e8ea1cce54be
+JavaScript warning: https://static.xx.fbcdn.net/rsrc.php/v3iX3c4/y6/l/en_GB/sEadbUjyfBj.js?_nc_x=Ij3Wp8lg5Kz, line 21: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1664255921755	addons.xpi	ERROR	System addon update list error Error: Failed downloading XML, status: 0, reason: error
+1664272143032	Marionette	INFO	Stopped listening on port 60320
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+remote-debugging-port" "63960" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\uif48567\\AppData\\Local\\Temp\\rust_mozprofile6HASHN"
+1664271985923	Marionette	INFO	Marionette enabled
+1664271985932	Marionette	INFO	Listening on port 63977
+Read port: 63977
+WebDriver BiDi listening on ws://127.0.0.1:63960
+1664271986087	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\uif48567\\AppData\\Local\\Temp\\rust_mozprofile6HASHN\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:63960/devtools/browser/352e2d79-9b75-466d-a310-45df0f786b90
+JavaScript warning: https://static.xx.fbcdn.net/rsrc.php/v3iX3c4/y6/l/en_GB/sEadbUjyfBj.js?_nc_x=Ij3Wp8lg5Kz, line 21: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+console.error: "stylesheets: fetch failed for https://static.xx.fbcdn.net/rsrc.php/v3/y4/l/0,cross/wcEiSUyk-PW.css?_nc_x=Ij3Wp8lg5Kz, using system principal instead."
+console.error: "stylesheets: fetch failed for https://static.xx.fbcdn.net/rsrc.php/v3/y4/l/0,cross/wcEiSUyk-PW.css?_nc_x=Ij3Wp8lg5Kz, using system principal instead."
+console.error: "stylesheets: fetch failed for https://static.xx.fbcdn.net/rsrc.php/v3/y4/l/0,cross/wcEiSUyk-PW.css?_nc_x=Ij3Wp8lg5Kz, using system principal instead."
+console.error: "stylesheets: fetch failed for https://static.xx.fbcdn.net/rsrc.php/v3/y_/l/0,cross/HswC-jimQHk.css?_nc_x=Ij3Wp8lg5Kz, using system principal instead."
+console.error: "stylesheets: fetch failed for https://static.xx.fbcdn.net/rsrc.php/v3/y4/l/0,cross/wcEiSUyk-PW.css?_nc_x=Ij3Wp8lg5Kz, using system principal instead."
+console.error: "stylesheets: fetch failed for https://static.xx.fbcdn.net/rsrc.php/v3/y4/l/0,cross/wcEiSUyk-PW.css?_nc_x=Ij3Wp8lg5Kz, using system principal instead."
+console.error: "stylesheets: fetch failed for https://static.xx.fbcdn.net/rsrc.php/v3/y4/l/0,cross/wcEiSUyk-PW.css?_nc_x=Ij3Wp8lg5Kz, using system principal instead."
+console.error: "stylesheets: fetch failed for https://static.xx.fbcdn.net/rsrc.php/v3/yX/l/0,cross/KpTpWDr4C3f.css?_nc_x=Ij3Wp8lg5Kz, using system principal instead."
+console.error: "stylesheets: fetch failed for https://static.xx.fbcdn.net/rsrc.php/v3/y4/l/0,cross/wcEiSUyk-PW.css?_nc_x=Ij3Wp8lg5Kz, using system principal instead."
+console.error: "stylesheets: fetch failed for https://static.xx.fbcdn.net/rsrc.php/v3/y4/l/0,cross/wcEiSUyk-PW.css?_nc_x=Ij3Wp8lg5Kz, using system principal instead."
+console.error: "stylesheets: fetch failed for https://static.xx.fbcdn.net/rsrc.php/v3/y4/l/0,cross/wcEiSUyk-PW.css?_nc_x=Ij3Wp8lg5Kz, using system principal instead."
+console.error: "stylesheets: fetch failed for https://static.xx.fbcdn.net/rsrc.php/v3/yl/l/0,cross/CC3Ee3xydGL.css?_nc_x=Ij3Wp8lg5Kz, using system principal instead."
+console.error: "stylesheets: fetch failed for https://static.xx.fbcdn.net/rsrc.php/v3/y_/l/0,cross/HswC-jimQHk.css?_nc_x=Ij3Wp8lg5Kz, using system principal instead."
+console.error: "stylesheets: fetch failed for https://static.xx.fbcdn.net/rsrc.php/v3/yl/l/0,cross/CC3Ee3xydGL.css?_nc_x=Ij3Wp8lg5Kz, using system principal instead."
+console.error: "stylesheets: fetch failed for https://static.xx.fbcdn.net/rsrc.php/v3/yl/l/0,cross/CC3Ee3xydGL.css?_nc_x=Ij3Wp8lg5Kz, using system principal instead."
+console.error: "stylesheets: fetch failed for https://static.xx.fbcdn.net/rsrc.php/v3/yX/l/0,cross/KpTpWDr4C3f.css?_nc_x=Ij3Wp8lg5Kz, using system principal instead."
+console.error: "stylesheets: fetch failed for https://static.xx.fbcdn.net/rsrc.php/v3/yl/l/0,cross/CC3Ee3xydGL.css?_nc_x=Ij3Wp8lg5Kz, using system principal instead."
+console.error: "stylesheets: fetch failed for https://static.xx.fbcdn.net/rsrc.php/v3/yl/l/0,cross/CC3Ee3xydGL.css?_nc_x=Ij3Wp8lg5Kz, using system principal instead."
+console.error: "stylesheets: fetch failed for https://static.xx.fbcdn.net/rsrc.php/v3/yl/l/0,cross/CC3Ee3xydGL.css?_nc_x=Ij3Wp8lg5Kz, using system principal instead."
+console.error: "stylesheets: fetch failed for https://static.xx.fbcdn.net/rsrc.php/v3/yl/l/0,cross/CC3Ee3xydGL.css?_nc_x=Ij3Wp8lg5Kz, using system principal instead."
+console.error: "stylesheets: fetch failed for https://static.xx.fbcdn.net/rsrc.php/v3/y4/l/0,cross/wcEiSUyk-PW.css?_nc_x=Ij3Wp8lg5Kz, using system principal instead."
+console.error: "stylesheets: fetch failed for https://static.xx.fbcdn.net/rsrc.php/v3/yl/l/0,cross/CC3Ee3xydGL.css?_nc_x=Ij3Wp8lg5Kz, using system principal instead."
+console.error: "stylesheets: fetch failed for https://static.xx.fbcdn.net/rsrc.php/v3/yX/l/0,cross/KpTpWDr4C3f.css?_nc_x=Ij3Wp8lg5Kz, using system principal instead."
+console.error: "stylesheets: fetch failed for https://static.xx.fbcdn.net/rsrc.php/v3/yl/l/0,cross/CC3Ee3xydGL.css?_nc_x=Ij3Wp8lg5Kz, using system principal instead."
+console.error: "stylesheets: fetch failed for https://static.xx.fbcdn.net/rsrc.php/v3/y4/l/0,cross/wcEiSUyk-PW.css?_nc_x=Ij3Wp8lg5Kz, using system principal instead."
+console.error: "stylesheets: fetch failed for https://static.xx.fbcdn.net/rsrc.php/v3/yl/l/0,cross/CC3Ee3xydGL.css?_nc_x=Ij3Wp8lg5Kz, using system principal instead."
+console.error: "stylesheets: fetch failed for https://static.xx.fbcdn.net/rsrc.php/v3/y4/l/0,cross/wcEiSUyk-PW.css?_nc_x=Ij3Wp8lg5Kz, using system principal instead."
+console.error: "stylesheets: fetch failed for https://static.xx.fbcdn.net/rsrc.php/v3/y4/l/0,cross/wcEiSUyk-PW.css?_nc_x=Ij3Wp8lg5Kz, using system principal instead."
+console.error: "stylesheets: fetch failed for https://static.xx.fbcdn.net/rsrc.php/v3/yl/l/0,cross/CC3Ee3xydGL.css?_nc_x=Ij3Wp8lg5Kz, using system principal instead."
+console.error: "stylesheets: fetch failed for https://static.xx.fbcdn.net/rsrc.php/v3/yX/l/0,cross/KpTpWDr4C3f.css?_nc_x=Ij3Wp8lg5Kz, using system principal instead."
+console.error: "stylesheets: fetch failed for https://static.xx.fbcdn.net/rsrc.php/v3/y4/l/0,cross/wcEiSUyk-PW.css?_nc_x=Ij3Wp8lg5Kz, using system principal instead."
+console.error: "stylesheets: fetch failed for https://static.xx.fbcdn.net/rsrc.php/v3/y4/l/0,cross/wcEiSUyk-PW.css?_nc_x=Ij3Wp8lg5Kz, using system principal instead."
+console.error: "stylesheets: fetch failed for https://static.xx.fbcdn.net/rsrc.php/v3/y_/l/0,cross/HswC-jimQHk.css?_nc_x=Ij3Wp8lg5Kz, using system principal instead."
+console.error: "stylesheets: fetch failed for https://static.xx.fbcdn.net/rsrc.php/v3/y4/l/0,cross/wcEiSUyk-PW.css?_nc_x=Ij3Wp8lg5Kz, using system principal instead."
+console.error: "stylesheets: fetch failed for https://static.xx.fbcdn.net/rsrc.php/v3/yl/l/0,cross/CC3Ee3xydGL.css?_nc_x=Ij3Wp8lg5Kz, using system principal instead."
+console.error: "stylesheets: fetch failed for https://static.xx.fbcdn.net/rsrc.php/v3/y4/l/0,cross/wcEiSUyk-PW.css?_nc_x=Ij3Wp8lg5Kz, using system principal instead."
+SourceActor threw an exception: Error: Failed to fetch https://www.facebook.com/. Code 2153390067.
+Stack: onResponse@resource://devtools/shared/DevToolsUtils.js:583:16
+onStopRequest@resource://gre/modules/NetUtil.jsm:126:18
+Line: 583, column: 16
+console.error: (new Error("Failed to fetch https://www.facebook.com/. Code 2153390067.", "resource://devtools/shared/DevToolsUtils.js", 583))
+JavaScript error: resource://devtools/shared/DevToolsUtils.js, line 583: Error: Failed to fetch https://www.facebook.com/. Code 2153390067.
+console.error: "stylesheets: fetch failed for https://static.xx.fbcdn.net/rsrc.php/v3/y_/l/0,cross/HswC-jimQHk.css?_nc_x=Ij3Wp8lg5Kz, using system principal instead."
+console.error: "stylesheets: fetch failed for https://static.xx.fbcdn.net/rsrc.php/v3/yX/l/0,cross/KpTpWDr4C3f.css?_nc_x=Ij3Wp8lg5Kz, using system principal instead."
+console.error: "stylesheets: fetch failed for https://static.xx.fbcdn.net/rsrc.php/v3/yl/l/0,cross/CC3Ee3xydGL.css?_nc_x=Ij3Wp8lg5Kz, using system principal instead."
+console.error: "stylesheets: fetch failed for https://static.xx.fbcdn.net/rsrc.php/v3/yl/l/0,cross/CC3Ee3xydGL.css?_nc_x=Ij3Wp8lg5Kz, using system principal instead."
+console.error: "stylesheets: fetch failed for https://static.xx.fbcdn.net/rsrc.php/v3/yl/l/0,cross/CC3Ee3xydGL.css?_nc_x=Ij3Wp8lg5Kz, using system principal instead."
+console.error: "stylesheets: fetch failed for https://static.xx.fbcdn.net/rsrc.php/v3/yl/l/0,cross/CC3Ee3xydGL.css?_nc_x=Ij3Wp8lg5Kz, using system principal instead."
+console.error: "stylesheets: fetch failed for https://static.xx.fbcdn.net/rsrc.php/v3/yl/l/0,cross/CC3Ee3xydGL.css?_nc_x=Ij3Wp8lg5Kz, using system principal instead."
+console.error: "stylesheets: fetch failed for https://static.xx.fbcdn.net/rsrc.php/v3/y4/l/0,cross/wcEiSUyk-PW.css?_nc_x=Ij3Wp8lg5Kz, using system principal instead."
+console.error: "stylesheets: fetch failed for https://static.xx.fbcdn.net/rsrc.php/v3/yX/l/0,cross/KpTpWDr4C3f.css?_nc_x=Ij3Wp8lg5Kz, using system principal instead."
+console.error: "stylesheets: fetch failed for https://static.xx.fbcdn.net/rsrc.php/v3/y4/l/0,cross/wcEiSUyk-PW.css?_nc_x=Ij3Wp8lg5Kz, using system principal instead."
+console.error: "stylesheets: fetch failed for https://static.xx.fbcdn.net/rsrc.php/v3/y4/l/0,cross/wcEiSUyk-PW.css?_nc_x=Ij3Wp8lg5Kz, using system principal instead."
+console.error: "stylesheets: fetch failed for https://static.xx.fbcdn.net/rsrc.php/v3/y_/l/0,cross/HswC-jimQHk.css?_nc_x=Ij3Wp8lg5Kz, using system principal instead."
+console.error: "stylesheets: fetch failed for https://static.xx.fbcdn.net/rsrc.php/v3/yX/l/0,cross/KpTpWDr4C3f.css?_nc_x=Ij3Wp8lg5Kz, using system principal instead."
+console.error: "stylesheets: fetch failed for https://static.xx.fbcdn.net/rsrc.php/v3/yl/l/0,cross/CC3Ee3xydGL.css?_nc_x=Ij3Wp8lg5Kz, using system principal instead."
+console.error: "stylesheets: fetch failed for https://static.xx.fbcdn.net/rsrc.php/v3/yl/l/0,cross/CC3Ee3xydGL.css?_nc_x=Ij3Wp8lg5Kz, using system principal instead."
+console.error: "stylesheets: fetch failed for https://static.xx.fbcdn.net/rsrc.php/v3/yl/l/0,cross/CC3Ee3xydGL.css?_nc_x=Ij3Wp8lg5Kz, using system principal instead."
+console.error: "stylesheets: fetch failed for https://static.xx.fbcdn.net/rsrc.php/v3/yl/l/0,cross/CC3Ee3xydGL.css?_nc_x=Ij3Wp8lg5Kz, using system principal instead."
+console.error: "stylesheets: fetch failed for https://static.xx.fbcdn.net/rsrc.php/v3/yl/l/0,cross/CC3Ee3xydGL.css?_nc_x=Ij3Wp8lg5Kz, using system principal instead."
+console.error: "stylesheets: fetch failed for https://static.xx.fbcdn.net/rsrc.php/v3/y4/l/0,cross/wcEiSUyk-PW.css?_nc_x=Ij3Wp8lg5Kz, using system principal instead."
+console.error: "stylesheets: fetch failed for https://static.xx.fbcdn.net/rsrc.php/v3/yX/l/0,cross/KpTpWDr4C3f.css?_nc_x=Ij3Wp8lg5Kz, using system principal instead."
+console.error: "stylesheets: fetch failed for https://static.xx.fbcdn.net/rsrc.php/v3/y4/l/0,cross/wcEiSUyk-PW.css?_nc_x=Ij3Wp8lg5Kz, using system principal instead."
+console.error: "stylesheets: fetch failed for https://static.xx.fbcdn.net/rsrc.php/v3/y4/l/0,cross/wcEiSUyk-PW.css?_nc_x=Ij3Wp8lg5Kz, using system principal instead."
+JavaScript error: resource://gre/modules/AsyncShutdown.jsm, line 576: NotFoundError: No such JSWindowActor 'DevToolsFrame'
+1664272146627	Marionette	INFO	Stopped listening on port 63977
+e-debugging-port" "64253" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\uif48567\\AppData\\Local\\Temp\\rust_mozprofileXg97nn"
+1664272119660	Marionette	INFO	Marionette enabled
+1664272119665	Marionette	INFO	Listening on port 64265
+Read port: 
+1664272119667	geckodriver::browser	WARN	Failed fo convert  to u16
+WebDriver BiDi listening on ws://127.0.0.1:64253
+Read port: 64265
+1664272119921	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\uif48567\\AppData\\Local\\Temp\\rust_mozprofileXg97nn\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:64253/devtools/browser/1d36407d-06a5-413a-871e-2a7f09a3159a
+JavaScript warning: https://static.xx.fbcdn.net/rsrc.php/v3iX3c4/y6/l/en_GB/sEadbUjyfBj.js?_nc_x=Ij3Wp8lg5Kz, line 21: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1664272148221	Marionette	INFO	Stopped listening on port 64265
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+1664272222261	geckodriver	INFO	Listening on 127.0.0.1:64400
+1664272225311	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "64401" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\uif48567\\AppData\\Local\\Temp\\rust_mozprofilea4MlTh"
+1664272225840	Marionette	INFO	Marionette enabled
+1664272225847	Marionette	INFO	Listening on port 64412
+Read port: 64412
+WebDriver BiDi listening on ws://127.0.0.1:64401
+1664272226010	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\uif48567\\AppData\\Local\\Temp\\rust_mozprofilea4MlTh\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:64401/devtools/browser/59bf8807-4946-4e48-ac48-5f598a59e616
+JavaScript warning: https://static.xx.fbcdn.net/rsrc.php/v3iX3c4/y6/l/en_GB/sEadbUjyfBj.js?_nc_x=Ij3Wp8lg5Kz, line 21: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+console.error: services.settings: 
+  Message: NetworkError: Network error: TypeError: NetworkError: Network request failed
+  Stack:
+    APIError@resource://services-settings/RemoteSettingsClient.jsm:116:1
+NetworkError@resource://services-settings/RemoteSettingsClient.jsm:120:5
+_adjustedError@resource://services-settings/RemoteSettingsClient.jsm:869:14
+maybeSync@resource://services-settings/RemoteSettingsClient.jsm:774:38
+
+console.error: services.settings: 
+  Message: NetworkError: Network error: TypeError: NetworkError: Network request failed
+  Stack:
+    APIError@resource://services-settings/RemoteSettingsClient.jsm:116:1
+NetworkError@resource://services-settings/RemoteSettingsClient.jsm:120:5
+_adjustedError@resource://services-settings/RemoteSettingsClient.jsm:869:14
+maybeSync@resource://services-settings/RemoteSettingsClient.jsm:774:38
+
+console.error: services.settings: 
+  Message: NetworkError: Network error: TypeError: NetworkError: Network request failed
+  Stack:
+    APIError@resource://services-settings/RemoteSettingsClient.jsm:116:1
+NetworkError@resource://services-settings/RemoteSettin1664272890839	addons.xpi	ERROR	System addon update list error Error: Failed downloading XML, status: 0, reason: error
+1664360307903	addons.xpi	ERROR	System addon update list error Error: Failed downloading XML, status: 0, reason: error
+JavaScript error: , line 0: NS_ERROR_NOT_AVAILABLE
+1664437372761	Marionette	INFO	Stopped listening on port 64541
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+ource://services-settings/RemoteSettingsClient.jsm:869:14
+maybeSync@resource://services-settings/RemoteSettingsClient.jsm:774:38
+
+console.error: services.settings: 
+  Message: NetworkError: Network error: TypeError: NetworkError: Network request failed
+  Stack:
+    APIError@resource://services-settings/RemoteSettingsClient.jsm:116:1
+NetworkError@resource://services-settings/RemoteSettingsClient.jsm:120:5
+_adjustedError@resource://services-settings/RemoteSettingsClient.jsm:869:14
+maybeSync@resource://services-settings/RemoteSettingsClient.jsm:774:38
+
+console.error: services.settings: 
+  main/normandy-recipes-capabilities Signature failed  TypeError: NetworkError: Network request failed
+console.error: services.settings: 
+  Message: NetworkError: Network error: TypeError: NetworkError: Network request failed
+  Stack:
+    APIError@resource://services-settings/RemoteSettingsClient.jsm:116:1
+NetworkError@resource://services-settings/RemoteSettingsClient.jsm:120:5
+_adjustedError@resource://services-settings/RemoteSettingsClient.jsm:869:14
+maybeSync@resource://services-settings/RemoteSettingsClient.jsm:774:38
+
+console.error: services.settings: 
+  Message: NetworkError: Network error: TypeError: NetworkError: Network request failed
+  Stack:
+    APIError@resource://services-settings/RemoteSettingsClient.jsm:116:1
+NetworkError@resource://services-settings/RemoteSettingsClient.jsm:120:5
+_adjustedError@resource://services-settings/RemoteSettingsClient.jsm:869:14
+maybeSync@resource://services-settings/RemoteSettingsClient.jsm:774:38
+
+console.error: services.settings: 
+  Message: NetworkError: Network error: TypeError: NetworkError: Network request failed
+  Stack:
+    APIError@resource://services-settings/RemoteSettingsClient.jsm:116:1
+NetworkError@resource://services-settings/RemoteSettingsClient.jsm:120:5
+_adjustedError@resource://services-settings/RemoteSettingsClient.jsm:869:14
+maybeSync@resource://services-settings/RemoteSettingsClient.jsm:774:38
+
+console.error: services.settings: 
+  security-state/cert-revocations Signature failed  TypeError: NetworkError: Network request failed
+console.error: services.settings: 
+  Message: NetworkError: Network error: TypeError: NetworkError: Network request failed
+  Stack:
+    APIError@resource://services-settings/RemoteSettingsClient.jsm:116:1
+NetworkError@resource://services-settings/RemoteSettingsClient.jsm:120:5
+_adjustedError@resource://services-settings/RemoteSettingsClient.jsm:869:14
+maybeSync@resource://services-settings/RemoteSettingsClient.jsm:774:38
+
+console.error: services.settings: 
+  security-state/intermediates Signature failed  TypeError: NetworkError: Network request failed
+console.error: services.settings: 
+  Message: NetworkError: Network error: TypeError: NetworkError: Network request failed
+  Stack:
+    APIError@resource://services-settings/RemoteSettingsClient.jsm:116:1
+NetworkError@resource://services-settings/RemoteSettingsClient.jsm:120:5
+_adjustedError@resource://services-settings/RemoteSettingsClient.jsm:869:14
+maybeSync@resource://services-settings/RemoteSettingsClient.jsm:774:38
+
+1664272736016	addons.xpi	ERROR	System addon update list error Error: Failed downloading XML, status: 0, reason: error
+1664360310018	addons.xpi	ERROR	System addon update list error Error: Failed downloading XML, status: 0, reason: error
+JavaScript error: , line 0: NS_ERROR_NOT_AVAILABLE
+1664437371122	Marionette	INFO	Stopped listening on port 64412
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.

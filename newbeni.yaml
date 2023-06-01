@@ -1,0 +1,13 @@
+rest:
+  url: "https://www.saucedemo.com/"
+  user: "standard_user"
+  pass: "secret_sauce"
+  url2: "https://www.saucedemo.com/cart.html"
+  browser: "chrome"
+  button: "Add to cart"
+  item1: "abc"
+  item2: 'aa'
+  item3: 'bb'
+  item4: 'cc'
+
+

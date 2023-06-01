@@ -1,0 +1,51 @@
+from selenium import webdriver
+import time
+from webdriver_manager.chrome import ChromeDriverManager
+from selenium.webdriver.support.ui import Select
+from selenium.webdriver.common.by import By
+from selenium.webdriver.common.keys import Keys
+from selenium.webdriver.common.action_chains import ActionChains
+driver = webdriver.Chrome(ChromeDriverManager().install())
+driver.implicitly_wait(10)
+driver.get("https://www.thetestingworld.com/testings/")
+driver.implicitly_wait(10)
+driver.find_element(By.NAME,"fld_username").send_keys("Divakar reddy")
+actions=ActionChains(driver)
+'''actions.key_down(Keys.CONTROL).send_keys("a").key_up(Keys.CON
+actions.key_down(Keys.CONTROL).send_keys("c").key_up(Keys.CONTROL).perform()'''
+actions.send_keys(Keys.TAB).perform()
+driver.find_element(By.NAME,"fld_email").send_keys("kdivakar2000@gmail.com")
+actions.send_keys(Keys.TAB).perform()
+driver.find_element(By.NAME,"fld_password").send_keys("divi@20")
+actions.key_down(Keys.CONTROL).send_keys("a").key_up(Keys.CONTROL).perform()
+actions.key_down(Keys.CONTROL).send_keys("c").key_up(Keys.CONTROL).perform()
+actions.send_keys(Keys.TAB)
+actions.key_down(Keys.CONTROL).send_keys("v").key_up(Keys.CONTROL).perform()
+actions.send_keys(Keys.TAB).perform()
+driver.find_element(By.ID,"datepicker").click()
+driver.find_element(By.XPATH,"//a[text()='19']").click()
+actions.send_keys(Keys.TAB)
+driver.find_element(By.NAME,'phone').send_keys("+918523476456")
+actions.send_keys(Keys.TAB)
+driver.find_element(By.NAME,"address").send_keys("e-city,bangalore")
+driver.find_element(By.XPATH,"//input[@value='office']").click()
+ele1 = driver.find_element(By.NAME,'sex')
+drp1 = Select(ele1)
+time.sleep(2)
+drp1.select_by_index(1)
+ele2=driver.find_element(By.NAME,"country")
+drp2=Select(ele2)
+drp2.select_by_visible_text('India')
+ele3=driver.find_element(By.ID,"stateId")
+drp3=Select(ele3)
+driver.implicitly_wait(10)
+drp3.select_by_visible_text("Andhra Pradesh")
+ele4=driver.find_element(By.ID,"cityId")
+drp4=Select(ele4)
+driver.implicitly_wait(10)
+drp4.select_by_visible_text("Chittoor")
+driver.find_element(By.NAME,"zip").send_keys("517247")
+driver.find_element(By.NAME,"terms").click()
+driver.find_element(By.XPATH,"//input[@value='Sign up']").click()
+time.sleep(5)
+driver.quit()

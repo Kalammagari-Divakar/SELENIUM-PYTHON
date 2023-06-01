@@ -1,38 +1,29 @@
+#adding 4 items to card
+#dynamically picking items from yaml file
+#adding one item and removing one item and doing assertion
 import time
-import logging
 from selenium import webdriver
-from selenium.webdriver.common import keys
-
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.wait import WebDriverWait
 from webdriver_manager.chrome import ChromeDriverManager
 from webdriver_manager.microsoft import EdgeChromiumDriverManager
 from webdriver_manager.firefox import GeckoDriverManager
 from selenium.webdriver.support import expected_conditions
-from selenium.webdriver.common.keys import Keys
-from selenium.webdriver.support.ui import Select
-from selenium.webdriver.common.action_chains import ActionChains
-from benedict import benedict
-
-driver = None
-
-
-def setup_module(module):
-    global driver
-    driver = webdriver.Chrome(ChromeDriverManager().install())
-
-    driver.implicitly_wait(10)
-
-
-def teardown_module(module):
-    driver.quit()
-
-    # adding 4 items to card
-    # dynamically picking items from yaml file
-    # adding one item and removing one item and doing assertion
 
 
 def test_3():
+    import time
+    from selenium import webdriver
+    from selenium.webdriver.common.by import By
+    from selenium.webdriver.support.wait import WebDriverWait
+    from webdriver_manager.chrome import ChromeDriverManager
+    from webdriver_manager.microsoft import EdgeChromiumDriverManager
+    from webdriver_manager.firefox import GeckoDriverManager
+    from selenium.webdriver.support import expected_conditions
+    # from Screenshot import Screenshot_clipping
+    from benedict import benedict
+    from PIL import Image
+    # ss = Screenshot.Screenshot_clipping()
     options = webdriver.ChromeOptions()
 
     obj = benedict.from_yaml("C:\\Users\\uif48567\\PycharmProjects\\Selenium-Python\\ass.yaml")
@@ -147,12 +138,22 @@ def test_3():
     path = "C:\\Users\\uif48567\\PycharmProjects\\Selenium-Python\\name.png"
     el = driver.find_element(By.XPATH, '//body')
     el.screenshot(path)
+    driver.quit()
 
-    # adding 6 items to cart and remove 6 items and doing assertion
-    # selecting filter and doing assertion for filter
-
-
+#adding 6 items to cart and remove 6 items and doing assertion
+#selecting filter and doing assertion for filter
 def test_4():
+    import time
+    from selenium import webdriver
+    from selenium.webdriver.common.by import By
+    from selenium.webdriver.support.wait import WebDriverWait
+    from webdriver_manager.chrome import ChromeDriverManager
+    from webdriver_manager.microsoft import EdgeChromiumDriverManager
+    from webdriver_manager.firefox import GeckoDriverManager
+    from selenium.webdriver.support import expected_conditions
+    from selenium.webdriver.support.ui import Select
+    from benedict import benedict
+
     obj = benedict.from_yaml("C:\\Users\\uif48567\\PycharmProjects\\Selenium-Python\\assignment4.yaml")
     s1 = obj['rest.browser']
     s2 = str.casefold(s1)
@@ -277,15 +278,22 @@ def test_4():
     print(list2)
     assert list1 == list2, "validation fail"
     print("dropdown box selected successfully")
-    # driver.quit()
+    driver.quit()
 
-    # pop-up message alert message
-    # alert.accept()
-    # alert.dismiss()
-    # alert.sendkeys()
-
+#pop-up message alert message
+#alert.accept()
+#alert.dismiss()
+#alert.sendkeys()
 
 def test_alert():
+    from selenium import webdriver
+    import time
+    from selenium.webdriver.common.by import By
+    from selenium.webdriver.support import expected_conditions
+    from selenium.webdriver.support.wait import WebDriverWait
+    from webdriver_manager.chrome import ChromeDriverManager
+    driver = webdriver.Chrome(ChromeDriverManager().install())
+    driver.implicitly_wait(10)
     driver.get("http://the-internet.herokuapp.com/javascript_alerts")
     # wait = WebDriverWait(driver,10)
     # element1 = wait.until(expected_conditions.element_to_be_clickable((By.XPATH,"//button[text()='Click for JS Alert']")))
@@ -310,15 +318,14 @@ def test_alert():
     # ele2.dismiss()
     time.sleep(3)
 
-    # popup messages
-    # windows handling
-
+#popup messages
+#windows handling
 
 def test_alert1():
-    # from selenium import webdriver
-    # import time
-    # from selenium.webdriver.common.by import By
-    # from webdriver_manager.chrome import ChromeDriverManager
+    from selenium import webdriver
+    import time
+    from selenium.webdriver.common.by import By
+    from webdriver_manager.chrome import ChromeDriverManager
 
     driver = webdriver.Chrome(ChromeDriverManager().install())
     driver.maximize_window()
@@ -335,10 +342,7 @@ def test_alert1():
     for handle in handles:
         driver.switch_to.window(handle)
         print(driver.title)
-    time.sleep(5)
-    driver.execute_script("window.scrollTo(0,200);")
-    time.sleep(10)
-    driver.find_element(By.ID, 'alertBox').click()
+    driver.find_element(By.XPATH, "//button[@id='alertBox']").click()
 
     alert = driver.switch_to.alert
     # print(alert.text)
@@ -353,298 +357,6 @@ def test_alert1():
     alert2.send_keys("divakar reddy")
     alert2.accept()
     time.sleep(5)
-    # driver.quit()
+    driver.quit()
 
 
-def test_keyboard_operations():
-    # from selenium import webdriver
-    # import time
-    # from webdriver_manager.chrome import ChromeDriverManager
-    # from selenium.webdriver.support.ui import Select
-    # from selenium.webdriver.common.by import By
-    # from selenium.webdriver.common.keys import Keys
-    # from selenium.webdriver.common.action_chains import ActionChains
-    driver = webdriver.Chrome(ChromeDriverManager().install())
-    driver.implicitly_wait(10)
-    driver.get("https://www.thetestingworld.com/testings/")
-    driver.implicitly_wait(10)
-    driver.find_element(By.NAME, "fld_username").send_keys("Divakar reddy")
-    actions = ActionChains(driver)
-    '''actions.key_down(Keys.CONTROL).send_keys("a").key_up(Keys.CON
-    actions.key_down(Keys.CONTROL).send_keys("c").key_up(Keys.CONTROL).perform()'''
-    actions.send_keys(Keys.TAB).perform()
-    driver.find_element(By.NAME, "fld_email").send_keys("kdivakar2000@gmail.com")
-    actions.send_keys(Keys.TAB).perform()
-    driver.find_element(By.NAME, "fld_password").send_keys("divi@20")
-    actions.key_down(Keys.CONTROL).send_keys("a").key_up(Keys.CONTROL).perform()
-    actions.key_down(Keys.CONTROL).send_keys("c").key_up(Keys.CONTROL).perform()
-    actions.send_keys(Keys.TAB)
-    actions.key_down(Keys.CONTROL).send_keys("v").key_up(Keys.CONTROL).perform()
-    actions.send_keys(Keys.TAB).perform()
-    driver.find_element(By.ID, "datepicker").click()
-    driver.find_element(By.XPATH, "//a[text()='19']").click()
-    actions.send_keys(Keys.TAB)
-    driver.find_element(By.NAME, 'phone').send_keys("+918523476456")
-    actions.send_keys(Keys.TAB)
-    driver.find_element(By.NAME, "address").send_keys("e-city,bangalore")
-    driver.find_element(By.XPATH, "//input[@value='office']").click()
-    ele1 = driver.find_element(By.NAME, 'sex')
-    drp1 = Select(ele1)
-    time.sleep(2)
-    drp1.select_by_index(1)
-    ele2 = driver.find_element(By.NAME, "country")
-    drp2 = Select(ele2)
-    drp2.select_by_visible_text('India')
-    ele3 = driver.find_element(By.ID, "stateId")
-    drp3 = Select(ele3)
-    driver.implicitly_wait(10)
-    drp3.select_by_visible_text("Andhra Pradesh")
-    ele4 = driver.find_element(By.ID, "cityId")
-    drp4 = Select(ele4)
-    driver.implicitly_wait(10)
-    drp4.select_by_visible_text("Chittoor")
-    driver.find_element(By.NAME, "zip").send_keys("517247")
-    driver.find_element(By.NAME, "terms").click()
-    driver.find_element(By.XPATH, "//input[@value='Sign up']").click()
-    time.sleep(5)
-
-
-def test_mouse_operations():
-    driver = webdriver.Chrome(ChromeDriverManager().install())
-    driver.implicitly_wait(10)
-    driver.get("https://www.thetestingworld.com/#")
-    actions = ActionChains(driver)
-    # moving mouse to particular place
-
-    actions.move_to_element(driver.find_element(By.ID, "menu576")).perform()
-    # left click of mouse
-    actions.click().perform()
-    # right click of mouse
-    actions.context_click().perform()
-    # click at a specific point
-    actions.click(driver.find_element(By.XPATH, "//a[text()='Quick Demo']")).perform()
-    # right click at a specific point
-    # actions.context_click(driver.find_element(By.ID,"wdform_1_element_first2")).perform()
-    # double click
-    actions.double_click().perform()
-    # double click at specific location
-    actions.double_click(driver.find_element(By.XPATH, "//button[text()='Submit']")).perform()
-    time.sleep(10)
-
-
-def test_scrolling():
-    data = benedict.from_yaml("C:\\Users\\uif48567\\PycharmProjects\\Selenium-Python\\insta.yaml")
-    driver = webdriver.Chrome(ChromeDriverManager().install())
-    driver.implicitly_wait(10)
-    driver.get(data['test_scrolling.url'])
-    driver.maximize_window()
-    time.sleep(10)
-    # scrolling window with pixel size
-    # driver.execute_script("window.scrollBy(0,1000)","")
-    # time.sleep(5)
-    # scrolling down a page till the element is visible
-    flag = driver.find_element(By.XPATH, data['test_scrolling.element'])
-    driver.execute_script("arguments[0].scrollIntoView(true);", flag)
-    time.sleep(5)
-    # scroll down till end
-    # driver.execute_script("window.scrollBy(0,document.body.scrollHeight)")
-
-
-# iframes
-
-def test_iframes():
-    data = benedict.from_yaml("C:\\Users\\uif48567\\PycharmProjects\\Selenium-Python\\insta.yaml")
-    driver = webdriver.Chrome(ChromeDriverManager().install())
-    driver.implicitly_wait(10)
-    driver.get(data['test_iframes.url'])
-    driver.maximize_window()
-    driver.switch_to.frame(data['test_iframes.first frame'])  # first frame
-    driver.find_element(By.LINK_TEXT, data['test_iframes.click in first frame']).click()
-    driver.switch_to.default_content()
-    driver.switch_to.frame(data['test_iframes.second frame'])  # second frame
-    driver.find_element(By.LINK_TEXT, data['test_iframes.click in second frame']).click()
-    driver.switch_to.default_content()
-    driver.switch_to.frame(data['test_iframes.third frame'])  # third frame
-    driver.find_element(By.LINK_TEXT, data['test_iframes.click in third frame']).click()
-    # driver.find_element_by_link_text("org.openqa.selenium").click()
-    time.sleep(5)
-
-
-def test_iframe1():
-    driver = webdriver.Chrome(ChromeDriverManager().install())
-    driver.implicitly_wait(10)
-    driver.get("https://www.globalsqa.com/demo-site/frames-and-windows/#iFrame")
-    driver.maximize_window()
-    driver.switch_to.frame("google_esf")
-    driver.switch_to.default_content()
-    driver.switch_to.frame("globalSqa")
-    actions = ActionChains(driver)
-    # moving mouse to particular place
-
-    actions.move_to_element(driver.find_element(By.XPATH, "//div//span[@id='current_filter']")).perform()
-    driver.find_element(By.XPATH, "//li/div[text()='Software Testing']").click()
-    time.sleep(5)
-
-
-def test_window_handles():
-    data = benedict.from_yaml("C:\\Users\\uif48567\\PycharmProjects\\Selenium-Python\\insta.yaml")
-    driver = webdriver.Chrome(ChromeDriverManager().install())
-    driver.implicitly_wait(10)
-    driver.get(data['window_handles.url'])
-    driver.maximize_window()
-    driver.execute_script("window.scrollBy(0,900)")
-    time.sleep(5)
-    # click id
-    driver.find_element(By.ID, data['window_handles.id']).click()
-    time.sleep(5)
-    print(driver.current_window_handle)
-    handles = driver.window_handles
-    print(handles)
-    for handle in handles:
-        driver.switch_to.window(handle)
-        print(driver.title)
-    frst_child = driver.window_handles[0]  # withe the help of index we will switch to differnt windows
-    # to switch focus the first child window handle
-    driver.switch_to.window(frst_child)
-    time.sleep(5)
-
-
-# Python Selenium is_displayed(), is_enabled() and is_selected() Methods
-
-def test_is_displayed():
-    driver = webdriver.Chrome(ChromeDriverManager().install())
-    driver.implicitly_wait(10)
-    data = benedict.from_yaml("C:\\Users\\uif48567\\PycharmProjects\\Selenium-Python\\insta.yaml")
-    driver.get(data['is_displayed.url'])
-    time.sleep(3)
-    # username
-    user_name = driver.find_element(By.XPATH, data['is_displayed.username'])
-    print(user_name.is_displayed(), 'user coloumn is displayed or not')
-    if user_name.is_displayed() == True:
-        driver.find_element(By.NAME, "username").send_keys(data['is_displayed.username keys'])
-        time.sleep(5)
-    pswrd = driver.find_element(By.NAME, "password")
-    print(pswrd.is_displayed(), 'password coloumn is displayed or not')
-    if pswrd.is_displayed() == True:
-        driver.find_element(By.NAME, "password").send_keys(data['is_displayed.password keys'])
-        time.sleep(5)
-    login = driver.find_element(By.XPATH, data['is_displayed.login'])
-    print(login.is_enabled(), 'login button is enable or not')
-    if login.is_enabled() == True:
-        driver.find_element(By.XPATH, data['is_displayed.login']).click()
-        time.sleep(5)
-    # is selected
-    driver.get(data['is_displayed.isselected.url'])
-    select = driver.find_element(By.XPATH, data['is_displayed.isselected.select'])
-    print(select.is_selected(), 'check box is selected or not')
-    select1 = driver.find_element(By.XPATH, data['is_displayed.isselected.select1'])
-    print(select1.is_selected(), 'check box is selected or not')
-    time.sleep(10)
-    # is enable
-    driver.get(data['is_displayed.isenable.url'])
-    enable = driver.find_element(By.ID, data['is_displayed.isenable.enable'])
-    time.sleep(5)
-    print(enable.is_enabled(), 'button is enable or not ')
-
-
-# Selenium Python Tutorial - How to Get Element Attribute Value
-
-def test_get_attribute():
-    driver = webdriver.Chrome(ChromeDriverManager().install())
-    driver.implicitly_wait(10)
-    data = benedict.from_yaml("C:\\Users\\uif48567\\PycharmProjects\\Selenium-Python\\insta.yaml")
-    driver.get(data['hrm.url'])
-    driver.find_element(By.NAME, "username").send_keys(data['hrm.username'])
-    driver.find_element(By.NAME, "password").send_keys(data['hrm.password'])
-    attribute = driver.find_element(By.XPATH, "//button[text()=' Login ']").get_attribute("type")
-    time.sleep(10)
-    print(attribute, "is the attribute value")
-    if attribute == 'submit':
-        driver.find_element(By.XPATH, "//button[text()=' Login ']").click()
-        time.sleep(3)
-
-
-def test_screenshot():
-    data = benedict.from_yaml("C:\\Users\\uif48567\\PycharmProjects\\Selenium-Python\\insta.yaml")
-    driver = webdriver.Chrome(ChromeDriverManager().install())
-    driver.implicitly_wait(10)
-    driver.get(data['screenshot.url'])
-    time.sleep(3)
-    login = driver.find_element(By.XPATH, data['screenshot.login_button'])
-    # capture the screenshot of a particular elemnet with xpath
-    login.screenshot("C:\\Users\\uif48567\\Pictures\\Saved Pictures\\image.png")
-    # username
-    driver.find_element(By.NAME, data['screenshot.username']).send_keys('12355')
-    # pswrd
-    driver.find_element(By.NAME, data['screenshot.password']).send_keys('12331200')
-    # login
-    driver.find_element(By.XPATH, data['screenshot.login']).click()
-    time.sleep(2)
-    driver.get_screenshot_as_file("C:\\Users\\uif48567\\Pictures\\Saved Pictures\\image1.png")
-    driver.save_screenshot("C:\\Users\\uif48567\\Pictures\\Saved Pictures\\image2.png")
-
-
-# Selenium Python  - How to handle Auto Suggestion in Selenium
-
-def test_auto_suggestions():
-    data = benedict.from_yaml("C:\\Users\\uif48567\\PycharmProjects\\Selenium-Python\\insta.yaml")
-    driver = webdriver.Chrome(ChromeDriverManager().install())
-    driver.implicitly_wait(10)
-    driver.get(data['autosuggestions.url'])
-    # importing module
-    import logging
-
-    driver.maximize_window()
-    depart_from = driver.find_element(By.NAME, data['autosuggestions.depart_from'])
-    depart_from.click()
-    time.sleep(2)
-    depart_from.send_keys("New")
-    time.sleep(2)
-    depart_from.send_keys(Keys.ENTER)
-    time.sleep(10)
-    going_to = driver.find_element(By.NAME, data['autosuggestions.going_to'])
-    going_to.send_keys("New")
-    time.sleep(3)
-    suggestions = driver.find_elements(By.XPATH, data['autosuggestions.suggestions'])
-    print(len(suggestions))
-    for i in suggestions:
-        print(i.text)
-        if "New York (JFK)" in i.text:
-            i.click()
-            time.sleep(3)
-            break
-
-    # Selenium Python - How to handle Calendar in Selenium
-    time.sleep(5)
-    driver.find_element(By.XPATH, data['autosuggestions.date']).click()
-    time.sleep(5)
-    all_dates = driver.find_elements(By.XPATH, data['autosuggestions.all_dates'])
-
-    for dates in all_dates:
-        if "24/02/2023" in dates.get_attribute("data-date"):
-            dates.click()
-            time.sleep(5)
-
-            break
-    driver.find_element(By.XPATH,"//input[@value='Check Your Refund']").click()
-    time.sleep(5)
-    # logging.info("passed it successfully")
-
-
-# Selenium Python Tutorial #39 - How to Perform Drag and Drop in Selenium
-
-def test_drag_drop():
-    data = benedict.from_yaml("C:\\Users\\uif48567\\PycharmProjects\\Selenium-Python\\insta.yaml")
-
-    driver = webdriver.Chrome(ChromeDriverManager().install())
-    driver.implicitly_wait(10)
-    driver.get(data['drag_drop.url'])
-    driver.switch_to.frame(driver.find_element(By.CLASS_NAME, data['drag_drop.switchto']))
-    ele1 = driver.find_element(By.ID, data['drag_drop.element1'])
-    ele2 = driver.find_element(By.ID, data['drag_drop.element2'])
-    actions = ActionChains(driver)
-    actions.drag_and_drop(ele1, ele2).perform()
-    time.sleep(5)
-    # if we want to drag and drop by cordinates
-    # actions.drag_and_drop_by_offset(ele1,40,50).perform()
-    time.sleep(5)

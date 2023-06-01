@@ -1,0 +1,41 @@
+2023-01-09 16:06:07,371 Harmless debug Message
+2023-01-09 16:06:07,372 Just an information
+2023-01-09 16:06:07,372 Its a Warning
+2023-01-09 16:06:07,372 Did you try to divide by zero
+2023-01-09 16:06:07,372 Internet is down
+2023-01-09 16:06:07,372 ====== WebDriver manager ======
+2023-01-09 16:06:08,997 Get LATEST chromedriver version for google-chrome 108.0.5359
+2023-01-09 16:06:09,001 Starting new HTTPS connection (1): chromedriver.storage.googleapis.com:443
+2023-01-09 16:06:09,263 https://chromedriver.storage.googleapis.com:443 "GET /LATEST_RELEASE_108.0.5359 HTTP/1.1" 200 13
+2023-01-09 16:06:10,746 Driver [C:\Users\uif48567\.wdm\drivers\chromedriver\win32\108.0.5359\chromedriver.exe] found in cache
+2023-01-09 16:06:10,757 Started executable: `C:\Users\uif48567\.wdm\drivers\chromedriver\win32\108.0.5359\chromedriver.exe` in a child process with pid: 5824
+2023-01-09 16:06:11,261 POST http://localhost:64406/session {"capabilities": {"firstMatch": [{}], "alwaysMatch": {"browserName": "chrome", "pageLoadStrategy": "normal", "goog:chromeOptions": {"extensions": [], "args": []}}}}
+2023-01-09 16:06:11,261 Starting new HTTP connection (1): localhost:64406
+2023-01-09 16:06:12,153 http://localhost:64406 "POST /session HTTP/1.1" 200 793
+2023-01-09 16:06:12,154 Remote response: status=200 | data={"value":{"capabilities":{"acceptInsecureCerts":false,"browserName":"chrome","browserVersion":"108.0.5359.125","chrome":{"chromedriverVersion":"108.0.5359.71 (1e0e3868ee06e91ad636a874420e3ca3ae3756ac-refs/branch-heads/5359@{#1016})","userDataDir":"C:\\Users\\uif48567\\AppData\\Local\\Temp\\scoped_dir5824_242839657"},"goog:chromeOptions":{"debuggerAddress":"localhost:64409"},"networkConnectionEnabled":false,"pageLoadStrategy":"normal","platformName":"windows","proxy":{},"setWindowRect":true,"strictFileInteractability":false,"timeouts":{"implicit":0,"pageLoad":300000,"script":30000},"unhandledPromptBehavior":"dismiss and notify","webauthn:extension:credBlob":true,"webauthn:extension:largeBlob":true,"webauthn:virtualAuthenticators":true},"sessionId":"8d8eccdbddc0b8498728cdf3f5bc5698"}} | headers=HTTPHeaderDict({'Content-Length': '793', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2023-01-09 16:06:12,154 Finished Request
+2023-01-09 16:06:12,154 POST http://localhost:64406/session/8d8eccdbddc0b8498728cdf3f5bc5698/timeouts {"implicit": 10000}
+2023-01-09 16:06:12,157 http://localhost:64406 "POST /session/8d8eccdbddc0b8498728cdf3f5bc5698/timeouts HTTP/1.1" 200 14
+2023-01-09 16:06:12,158 Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2023-01-09 16:06:12,158 Finished Request
+2023-01-09 16:06:12,158 POST http://localhost:64406/session/8d8eccdbddc0b8498728cdf3f5bc5698/url {"url": "http://swisnl.github.io/jQuery-contextMenu/demo.html"}
+2023-01-09 16:06:14,305 http://localhost:64406 "POST /session/8d8eccdbddc0b8498728cdf3f5bc5698/url HTTP/1.1" 200 14
+2023-01-09 16:06:14,306 Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2023-01-09 16:06:14,306 Finished Request
+2023-01-09 16:06:14,306 POST http://localhost:64406/session/8d8eccdbddc0b8498728cdf3f5bc5698/element {"using": "xpath", "value": "//span[text()='right click me']"}
+2023-01-09 16:06:14,323 http://localhost:64406 "POST /session/8d8eccdbddc0b8498728cdf3f5bc5698/element HTTP/1.1" 200 88
+2023-01-09 16:06:14,324 Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"e7ca4c59-6eed-4e92-bfdc-304046bf84e8"}} | headers=HTTPHeaderDict({'Content-Length': '88', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2023-01-09 16:06:14,324 Finished Request
+2023-01-09 16:06:17,339 POST http://localhost:64406/session/8d8eccdbddc0b8498728cdf3f5bc5698/actions {"actions": [{"type": "pointer", "parameters": {"pointerType": "mouse"}, "id": "mouse", "actions": [{"type": "pointerMove", "duration": 250, "x": 0, "y": 0, "origin": {"element-6066-11e4-a52e-4f735466cecf": "e7ca4c59-6eed-4e92-bfdc-304046bf84e8"}}, {"type": "pointerDown", "duration": 0, "button": 2}, {"type": "pointerUp", "duration": 0, "button": 2}]}, {"type": "key", "id": "key", "actions": [{"type": "pause", "duration": 0}, {"type": "pause", "duration": 0}, {"type": "pause", "duration": 0}]}]}
+2023-01-09 16:06:17,643 http://localhost:64406 "POST /session/8d8eccdbddc0b8498728cdf3f5bc5698/actions HTTP/1.1" 200 14
+2023-01-09 16:06:17,644 Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2023-01-09 16:06:17,644 Finished Request
+2023-01-09 16:06:17,645 POST http://localhost:64406/session/8d8eccdbddc0b8498728cdf3f5bc5698/element {"using": "xpath", "value": "//li[@class='context-menu-item context-menu-icon context-menu-icon-edit']"}
+2023-01-09 16:06:17,663 http://localhost:64406 "POST /session/8d8eccdbddc0b8498728cdf3f5bc5698/element HTTP/1.1" 200 88
+2023-01-09 16:06:17,663 Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"64d700b6-fa4f-4a4b-9a95-32307935268c"}} | headers=HTTPHeaderDict({'Content-Length': '88', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2023-01-09 16:06:17,663 Finished Request
+2023-01-09 16:06:17,663 POST http://localhost:64406/session/8d8eccdbddc0b8498728cdf3f5bc5698/element/64d700b6-fa4f-4a4b-9a95-32307935268c/click {"id": "64d700b6-fa4f-4a4b-9a95-32307935268c"}
+2023-01-09 16:06:17,713 http://localhost:64406 "POST /session/8d8eccdbddc0b8498728cdf3f5bc5698/element/64d700b6-fa4f-4a4b-9a95-32307935268c/click HTTP/1.1" 200 14
+2023-01-09 16:06:17,713 Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2023-01-09 16:06:17,713 Finished Request
+2023-01-09 16:06:20,728 done
